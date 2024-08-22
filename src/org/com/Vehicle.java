@@ -2,45 +2,37 @@ package org.com;
 
 public class Vehicle {
 
-				    void startEngine() {
-		        System.out.println("The vehicle's engine starts.");
-		    }
-		
+	void startEngine() {
+		System.out.println("The vehicle's engine starts.");
+	}
 
-		    
-		    void startEngine(int a) {
-		    	
-		        System.out.println("The car's engine starts with a roar.");
-		    }
+	void startEngine(int a) {
 
-		    void honk() {
-		        System.out.println("The car honks.");
-		    }
-		}
+		System.out.println("The car's engine starts with a roar.");
+	}
 
-		class Motorcycle extends Vehicle {
-		    void startEngine() {
-		        System.out.println("The motorcycle's engine starts with a vroom.");
-		    }
+	void honk() {
+		System.out.println("The car honks.");
+	}
+}
 
-		    void rev() {
-		        System.out.println("The motorcycle revs its engine.");
-		    } 
-		
+class Motorcycle extends Vehicle {
+	void startEngine() {
+		System.out.println("The motorcycle's engine starts with a vroom.");
+	}
 
-		    public static void main(String[] args) {
-		        Vehicle myCar = new Vehicle();
-		        Vehicle myMotorcycle = new Motorcycle();
+	void rev() {
+		System.out.println("The motorcycle revs its engine.");
+	}
 
-		        myCar.startEngine();        
-		        myMotorcycle.startEngine(); 
+	public static void main(String[] args) {
+		Vehicle myCar = new Vehicle();
+		Vehicle myMotorcycle = new Motorcycle();
 
-		        //((Car) myCar).honk();              
-		        //((Motorcycle) myMotorcycle).rev(); 
-		    }
-		}
+		myCar.startEngine();
+		myMotorcycle.startEngine();
 
-
-	
-
-
+		// ((Car) myCar).honk();
+		// ((Motorcycle) myMotorcycle).rev();
+	}
+}
